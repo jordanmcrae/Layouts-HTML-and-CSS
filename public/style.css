@@ -7,6 +7,11 @@ body {
 
 p {
   color: #89B9BB;
+  font-family: verdana;
+}
+
+h1 {
+  font-family: verdana;
 }
 
 a:hover {
@@ -19,63 +24,62 @@ a:visited {
 
 .nav {
   background-color: #1E6366;
-  height: 63px;
+  height: 100px;
   width: 100%;
   border: 2px solid black;
-  z-index: 1;
 }
 
 
 #title {
   float: left;
-  text-align: justify;
   padding-right: 10%;
   color: #C0DDDE;
-  font-family: arial;
+  font-family: optima, arial;
+}
+
+#title a {
+  text-decoration: none;
 }
 
 #link1 {
   float: left;
   padding-right: 10%;
+  font-family: verdana;
 }
 
 #link2 {
   float: left;
   padding-right: 10%;
+  font-family: verdana;
 }
 
 #link3 {
   float: left;
+  font-family: verdana;
 }
 
 .container{
 width:100%;
-border: 2px solid black;
-border-left:none;
-border-right:none;
 text-align:center;
 }
 
 .left-col {
   float: left;
-  width: 30%;
+  width: 33%;
   border: 2px solid black;
-  padding: 10px;
 }
 
 .cen-col {
-  width: 30%;
+  width: 33%;
   border: 2px solid black;
   display: inline-block;
-  padding: 10px;
 }
 
 .right-col {
   float: right;
-  width: 30%;
+  width: 33%;
   background-color: 000;
   border: 2px solid black;
-  padding: 10px;
 }
 
 .footer {
@@ -89,4 +93,5 @@ text-align:center;
 #footer_text {
   color: #89B9BB;
   text-align: center;
+  font-family: verdana;
 }
