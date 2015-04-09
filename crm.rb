@@ -13,6 +13,10 @@ end
 
 get '/contacts' do
     erb :contacts
+    # erb :contacts, layout: :other_layout
+    # erb(:contacts, layout: :other_layout)       # => These all do the same thing. Used for adding a different layout
+    # erb(:contacts, :layout => :other_layout)
+    # erb(:contacts, {:layout => :other_layout})
 end
 
 get '/contacts/new' do
@@ -22,4 +26,5 @@ end
 post '/contacts' do
   new_contact = Contact.new(params[:first_name], params[:last_name], params[:email], params[:note])
   $rolodex.add_contact(new_contact)
+  erb :addcontact
 end
