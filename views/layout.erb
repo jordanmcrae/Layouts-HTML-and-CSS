@@ -3,8 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <%= yield %>
+
+    <header class="header">
+      <nav class="nav">
+        <h1 id="title">Customer Relationship Application</h1>
+        <h5 id="link1"><a href="/">Home</a></h5>
+        <h5 id="link2"><a href="/contacts">View Contacts</a></h5>
+        <h5 id="link3"><a href="/contacts/new">Add a Contact</a></h5>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+       <div class="left-col"></div>
+       <div class="cen-col"><%= yield %></div>
+       <div class="right-col"></div>
+    </div>
+
+    <footer class="footer">
+      <p id="footer_text">Customer Relationship Application</p>
+    </footer>
+
   </body>
 </html>
